@@ -15,7 +15,19 @@ const Home = () => {
   }, []);
 
   return(
-    <div>
+
+    
+    <div style={{backgroundColor: 'skyblue'}}>
+      
+      <div style={{backgroundColor: 'beige'}}>
+
+        {/*Adding a navigation bar and links */}
+        <a href='http://localhost:3000/'>Home </a>
+        <a href='http://localhost:3000/celllines'>CellLines </a>
+        <a href='http://localhost:3000/psets'>PSets </a>
+        <a href='http://localhost:3000/psetsnamedoi'>PSetsNameDoi</a>
+
+      </div>
       <h1>Home Page</h1>
       {
         data && <h1>{data.status}</h1>
