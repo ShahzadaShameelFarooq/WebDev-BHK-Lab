@@ -3,7 +3,7 @@ const axios = require('axios');
 // Call an external API to fetch cell line data.
 const get = async (req, res) => {
   let data = null;
-  const url = 'https://www.orcestra.ca/api/psets/canonical';
+  const url = process.env.PSETS_API_ENDPOINT;
   try{
     // Call the API using axios library.
     const res = await axios.get(url);
